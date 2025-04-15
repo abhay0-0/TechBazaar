@@ -1,0 +1,141 @@
+<!-- Main page for techBAZAAR -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="TechBazaar - Your one-stop destination for the latest technology and home essentials.">
+    <meta name="keywords" content="tech, bazaar, laptops, mobiles, appliances, electronics">
+    <title>techBAZAAR</title>
+    <style>
+        /* General styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #eef2f3, #dbe9f4);
+            color: #222;
+        }
+        /* Navbar styles */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: linear-gradient(90deg, #005bea, #00c6fb);
+            color: white;
+            padding: 20px 40px;
+            font-size: 28px;
+            font-weight: bold;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        /* Intro section styles */
+        .intro-section {
+            padding: 160px 40px 100px;
+            background-color: #ffffff;
+            text-align: center;
+            transition: background-color 0.5s ease;
+        }
+        .intro-section:hover {
+            background-color: #f0f4fc;
+        }
+        .intro-section p {
+            font-size: 20px;
+            margin: 20px auto;
+            max-width: 850px;
+            line-height: 1.7;
+        }
+        /* Category chooser styles */
+        .category-chooser {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin: 60px 0;
+            flex-wrap: wrap;
+        }
+        .category-tile {
+            width: 260px;
+            height: 260px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            padding: 30px;
+        }
+        .category-tile:hover {
+            transform: scale(1.07);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        .category-tile img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 15px;
+        }
+        .category-tile h3 {
+            font-size: 22px;
+            font-weight: bold;
+            color: #005bea;
+        }
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(90deg, #005bea, #00c6fb);
+            color: white;
+            margin-top: 40px;
+        }
+        @media (max-width: 768px) {
+            .category-chooser {
+                flex-direction: column;
+                align-items: center;
+            }
+            .category-tile {
+                width: 85%;
+                height: auto;
+            }
+            .category-tile img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <h1><span style="color: red;">tech</span><span style="color: rgb(0, 0, 0);">BAZAAR</span></h1>
+    </header>
+    <!-- Introduction section -->
+    <section class="intro-section">
+        <p>
+            Welcome to <strong>TechBazaar</strong> – your one-stop destination for the latest and greatest in technology and home essentials.
+        </p>
+    </section>
+    <!-- Category selection tiles -->
+    <section class="category-chooser">
+        <a class="category-tile" href="laptops.html" target="_blank">
+            <img src="images/lap.jpg" alt="Laptops">
+            <h3>Laptops</h3>
+        </a>
+        <a class="category-tile" href="mobiles.html" target="_blank">
+            <img src="images/phone.png" alt="Mobiles">
+            <h3>Mobiles</h3>
+        </a>
+        <a class="category-tile" href="appliances.html" target="_blank">
+            <img src="images/app.png" alt="Appliances">
+            <h3>Appliances</h3>
+        </a>
+    </section>
+    <!-- Footer with contact information -->
+    <footer>
+        <p>Contact: support@techbazaar.com | Call: +123 456 789</p>
+    </footer>
+</body>
+</html>
