@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Appliances - TechBazaar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #f0f4f8, #dbe9f4);
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(90deg, #005bea, #00c6fb);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .products {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      margin: 40px;
+      gap: 20px;
+    }
+
+    .product {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+      padding: 20px;
+      width: 28%;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .stars {
+      color: #f1c40f;
+      margin: 10px 0;
+    }
+
+    .buttons {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .buttons button {
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .buttons button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+<header><span style="color:red;">tech</span><span style="color:black;">BAZAAR</span></header>
+
+  <h2>Appliances</h2>
+  <div class="products">
+    <div class="product">
+      <img src="images/wm.png" alt="Washing Machine" />
+      <h3>Washing Machine</h3>
+      <div class="stars">★★★☆☆</div>
+      <p>Efficient washing machine with smart features.</p>
+      <div class="buttons">
+        <button>Add to Cart</button>
+        <button>Buy Now</button>
+      </div>
+    </div>
+    <div class="product">
+      <img src="images/micro.jpg" alt="Microwave Oven" />
+      <h3>Microwave Oven</h3>
+      <div class="stars">★★★★☆</div>
+      <p>Fast cooking and easy to use microwave oven.</p>
+      <div class="buttons">
+        <button>Add to Cart</button>
+        <button>Buy Now</button>
+      </div>
+    </div>
+    <div class="product">
+      <img src="images/fr.png" alt="Refrigerator" />
+      <h3>Refrigerator</h3>
+      <div class="stars">★★★★★</div>
+      <p>Energy-efficient refrigerator with large capacity.</p>
+      <div class="buttons">
+        <button>Add to Cart</button>
+        <button>Buy Now</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
